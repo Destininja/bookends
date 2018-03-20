@@ -1,9 +1,9 @@
-$(document).ready(function() {
-    
+$(document).ready(function () {
+
     var provider = new firebase.auth.GoogleAuthProvider();
     var database = firebase.database();
 
-    firebase.auth().onAuthStateChanged(function(user) {
+    firebase.auth().onAuthStateChanged(function (user) {
         window.user = user; // user is undefined if no user signed in
         console.log(user);
         if (user) {
@@ -22,13 +22,13 @@ $(document).ready(function() {
     function googleSignin() {
         firebase.auth()
 
-            .signInWithRedirect(provider).then(function(result) {
+            .signInWithRedirect(provider).then(function (result) {
                 var token = result.credential.accessToken;
                 var user = result.user;
 
                 console.log(token)
                 console.log(user)
-            }).catch(function(error) {
+            }).catch(function (error) {
                 var errorCode = error.code;
                 var errorMessage = error.message;
 
@@ -42,28 +42,28 @@ $(document).ready(function() {
     function googleSignout() {
         firebase.auth().signOut()
 
-            .then(function() {
+            .then(function () {
                 console.log('Signout Successful')
-            }, function(error) {
+            }, function (error) {
                 console.log('Signout Failed')
             });
     }
 
-    $("#signIn").on("click", function() {
+    $("#signIn").on("click", function () {
         googleSignin();
         localStorage.removeItem("searchterm");
     });
 
-    $("#signOut").on("click", function() {
+    $("#signOut").on("click", function () {
         localStorage.removeItem("searchterm");
         googleSignout();
     });
 
-    $("#search-form").on("submit", function(e) {
+    $("#search-form").on("submit", function (e) {
 
         e.preventDefault();
 
-        $("#books").empty();
+        $("#googleDisplay, #books").empty();
 
         book = $("#book-input").val().trim().toLowerCase();
 
@@ -71,21 +71,50 @@ $(document).ready(function() {
 
         if (user) {
 
-        var uid = firebase.auth().currentUser.uid;
-        database.ref().child('users/').child(uid).update({
-            name: user.displayName,
-            email: user.email
+            var uid = firebase.auth().currentUser.uid;
+            database.ref().child('users/').child(uid).update({
+                name: user.displayName,
+                email: user.email
+            });
+            database.ref().child('users/').child(uid).child('books/').push(book);
+        }
+        //// pauls stuff api
+
+        var queryURLGoogle = "https://www.googleapis.com/books/v1/volumes?q=" + book +
+            "&maxResults=1&key=AIzaSyCQStCvIKDiy83OxGJgzbvRlWJ3kyrVJyo"
+        var dataSet = [];
+        $.ajax({
+            url: queryURLGoogle,
+            method: "GET",
+            dataType: "jsonp"
+        }).then(function (response) {
+            var data = response.items[0].volumeInfo;
+           console.log(data);
+
+            var googleImage = $("<img class='card-img-top'>").attr("src", data.imageLinks.thumbnail);
+            var googleHolder = $("<div class='image-holder'>");
+            googleHolder.append(googleImage);
+            var googleTitle = $("<h3 class='card-title'>").text(data.title);
+            var googleAuthors = $("<h5 class='card-title'>").text(data.authors);
+            var googleDate = $("<p>").text(data.publishedDate);
+            var googleISBN = $("<p>").text(data.industryIdentifiers[0].identifier);
+            var googleCat = $("<p>").text(data.categories);
+            var googleLink = $("<a target='_blank' class='btn btn-primary'>").attr("href", data.infoLink).text("Go To Google");
+            var googleDesc = $("<p>").text(data.description);
+            var googleBody = $("<div class='card-body google-body'>").append(googleTitle, googleAuthors, googleDate, googleISBN, googleCat, googleDesc, googleLink);
+            var googleCard = $("<div class='card google-card'>").append(googleHolder, googleBody);
+            $("#googleDisplay").append(googleCard);
+
         });
-        database.ref().child('users/').child(uid).child('books/').push(book);
-}
 
+        ////end of pauls
 
-        var queryURL = "http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=Alexande-BookEnds-PRD-9f1a91299-b1690a3c&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&paginationInput.entriesPerPage=12&categoryID=267&currencyID=USD&keywords=book%" + book;
+        var queryURLEbay = "https://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=Alexande-BookEnds-PRD-9f1a91299-b1690a3c&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&paginationInput.entriesPerPage=12&categoryID=267&currencyID=USD&keywords=book%" + book;
         $.ajax({
             dataType: "jsonp",
             method: "GET",
-            url: queryURL,
-        }).then(function(response) {
+            url: queryURLEbay,
+        }).then(function (response) {
 
             var results = response.findItemsByKeywordsResponse[0].searchResult[0].item;
             console.log(results);
