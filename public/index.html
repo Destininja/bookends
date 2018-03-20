@@ -40,34 +40,31 @@
             </div>
         </div>
     </div>
-        <div class="container main">
+    <div class="container-fluid main">
         <div class="container-fluid bg-1 text-center">
-            <img src="assets/images/bookends_logo.png" alt="Bookends">
+            <img class="banner" src="assets/images/bookends_logo.png" alt="Bookends">
             <h3>A Better Way To Read</h3>
         </div>
         <div class="container-fluid bg-2 text-center">
             <h4>Reviews and Listings of your Favorite Titles</h4>
         </div>
-        <div>
+        <div class="text-center">
             <form id="search-form">
                 <input type="text" id="book-input" placeholder="choose a book" required />
                 <input id="book-search" type="submit" value="Search" />
             </form>
         </div>
-        <div class="row">
-            <div class="col-12">
+        <div class="row mt-3 results-area">
+            <div class="col-12 col-md-6">
                 <div id="googleDisplay">
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-6">
                 <div id="books">
                 </div>
             </div>
         </div>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/setup.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>

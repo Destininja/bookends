@@ -16,8 +16,8 @@
     color: #555555;
 }
 
-img {
-    max-width: 75%;
+img.banner {
+    max-width: 50%;
     /*border: 1px solid white;*/
 }
 
@@ -35,10 +35,15 @@ body {
 }
 
 .ebay-card {
-    width: 18rem;
+    width: 100%;
+    max-width: 18rem;
     margin: 10px;
     height: auto;
     align-items: center;
+}
+
+.ebay-card .card-title {
+    font-size: 1rem!important;
 }
 
 .card-img-top {
@@ -65,6 +70,15 @@ body {
     max-width: 150px;
     max-height: 150px;
     margin: 0 auto;
+}
+
+.descriptor {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.google-desc {
+    display: none;
 }
 
 ul {
