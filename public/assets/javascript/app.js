@@ -1,9 +1,9 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     var provider = new firebase.auth.GoogleAuthProvider();
     var database = firebase.database();
 
-    firebase.auth().onAuthStateChanged(function (user) {
+    firebase.auth().onAuthStateChanged(function(user) {
         window.user = user; // user is undefined if no user signed in
         console.log(user);
         if (user) {
@@ -22,13 +22,13 @@ $(document).ready(function () {
     function googleSignin() {
         firebase.auth()
 
-            .signInWithRedirect(provider).then(function (result) {
+            .signInWithRedirect(provider).then(function(result) {
                 var token = result.credential.accessToken;
                 var user = result.user;
 
                 console.log(token)
                 console.log(user)
-            }).catch(function (error) {
+            }).catch(function(error) {
                 var errorCode = error.code;
                 var errorMessage = error.message;
 
@@ -42,24 +42,24 @@ $(document).ready(function () {
     function googleSignout() {
         firebase.auth().signOut()
 
-            .then(function () {
+            .then(function() {
                 console.log('Signout Successful')
-            }, function (error) {
+            }, function(error) {
                 console.log('Signout Failed')
             });
     }
 
-    $("#signIn").on("click", function () {
+    $("#signIn").on("click", function() {
         googleSignin();
         localStorage.removeItem("searchterm");
     });
 
-    $("#signOut").on("click", function () {
+    $("#signOut").on("click", function() {
         localStorage.removeItem("searchterm");
         googleSignout();
     });
 
-    $("#search-form").on("submit", function (e) {
+    $("#search-form").on("submit", function(e) {
 
         e.preventDefault();
 
@@ -87,23 +87,30 @@ $(document).ready(function () {
             url: queryURLGoogle,
             method: "GET",
             dataType: "jsonp"
-        }).then(function (response) {
+        }).then(function(response) {
             var data = response.items[0].volumeInfo;
-           console.log(data);
+            console.log(data);
 
-            var googleImage = $("<img class='card-img-top'>").attr("src", data.imageLinks.thumbnail);
-            var googleHolder = $("<div class='image-holder'>");
-            googleHolder.append(googleImage);
-            var googleTitle = $("<h3 class='card-title'>").text(data.title);
-            var googleAuthors = $("<h5 class='card-title'>").text(data.authors);
-            var googleDate = $("<p>").text(data.publishedDate);
-            var googleISBN = $("<p>").text(data.industryIdentifiers[0].identifier);
-            var googleCat = $("<p>").text(data.categories);
-            var googleLink = $("<a target='_blank' class='btn btn-primary'>").attr("href", data.infoLink).text("Go To Google");
-            var googleDesc = $("<p>").text(data.description);
-            var googleBody = $("<div class='card-body google-body'>").append(googleTitle, googleAuthors, googleDate, googleISBN, googleCat, googleDesc, googleLink);
-            var googleCard = $("<div class='card google-card'>").append(googleHolder, googleBody);
-            $("#googleDisplay").append(googleCard);
+            if (data) {
+
+                var googleImage = $("<img class='card-img-top'>").attr("src", data.imageLinks.thumbnail);
+                var googleHolder = $("<div class='image-holder'>");
+                googleHolder.append(googleImage);
+                var googleTitle = $("<h3 class='card-title'>").text(data.title);
+                var googleAuthors = $("<h5 class='card-title'>").text(data.authors);
+                var googleDate = $("<p>").text("Published: " + data.publishedDate);
+                var googleISBN = $("<p>").text("ISBN: " + data.industryIdentifiers[0].identifier);
+                var googleCat = $("<p>").text(data.categories);
+                var googleLink = $("<a target='_blank' class='btn btn-primary'>").attr("href", data.infoLink).text("Go To Google");
+                var descriptor = $("<p class='descriptor' data-text-swap='Description -' data-text-original='Description +'>").text("Description +");
+                var googleDesc = $("<p class='google-desc'>").text(data.description);
+                var googleBody = $("<div class='card-body google-body'>").append(googleTitle, googleAuthors, googleDate, googleISBN, googleCat, descriptor, googleDesc, googleLink);
+                var googleCard = $("<div class='card google-card'>").append(googleHolder, googleBody);
+                $("#googleDisplay").append(googleCard);
+            } else {
+                var googleError = $("<p>").text("No results found. Please try searching again.");
+                $("#googleDisplay").append(googleError);
+            }
 
         });
 
@@ -114,36 +121,53 @@ $(document).ready(function () {
             dataType: "jsonp",
             method: "GET",
             url: queryURLEbay,
-        }).then(function (response) {
+        }).then(function(response) {
 
             var results = response.findItemsByKeywordsResponse[0].searchResult[0].item;
             console.log(results);
 
-            for (var i = 0; i < results.length; i++) {
+            if (results) {
 
-                var cardTitle = $("<h5 class='card-title'>").text(results[i].title);
-                console.log(results[i].title);
-                var bookImage = $("<img class='card-img-top'>").attr("src", results[i].galleryURL);
-                var imageHolder = $("<div class='image-holder'>");
-                imageHolder.append(bookImage);
-                console.log(results[i].galleryURL);
-                var bookLink = $("<a target='_blank' class='btn btn-primary'>").attr("href", results[i].viewItemURL).text("Buy It!");
-                console.log(cardTitle.text());
-                console.log(results[i].viewItemURL);
-                var currency = results[i].sellingStatus[0].currentPrice[0]["__value__"]
-                currency = parseFloat(currency).toFixed(2);
-                console.log(currency);
-                var bookPrice = $("<p class='card-text'>").text("$" + currency);
-                console.log(results[i].sellingStatus[0].currentPrice[0]);
-                var cardBody = $("<div class='card-body'>").append(cardTitle, bookPrice, bookLink);
-                var card = $("<div class='card ebay-card'>").append(imageHolder, cardBody);
-                $("#books").append(card);
+                for (var i = 0; i < results.length; i++) {
 
+                    var cardTitle = $("<h5 class='card-title'>").text(results[i].title);
+                    console.log(results[i].title);
+                    var bookImage = $("<img class='card-img-top'>").attr("src", results[i].galleryURL);
+                    var imageHolder = $("<div class='image-holder'>");
+                    imageHolder.append(bookImage);
+                    console.log(results[i].galleryURL);
+                    var bookLink = $("<a target='_blank' class='btn btn-primary'>").attr("href", results[i].viewItemURL).text("Buy It!");
+                    console.log(cardTitle.text());
+                    console.log(results[i].viewItemURL);
+                    var currency = results[i].sellingStatus[0].currentPrice[0]["__value__"]
+                    currency = parseFloat(currency).toFixed(2);
+                    console.log(currency);
+                    var bookPrice = $("<p class='card-text'>").text("$" + currency);
+                    console.log(results[i].sellingStatus[0].currentPrice[0]);
+                    var cardBody = $("<div class='card-body'>").append(cardTitle, bookPrice, bookLink);
+                    var card = $("<div class='card ebay-card'>").append(imageHolder, cardBody);
+                    $("#books").append(card);
+                }
+            } else {
+                var ebayError = $("<p>").html("No results found. Try searching on <a href='https://www.ebay.com'>eBay</a> instead.");
+                var errorCard = $("<div class='card error-card'>").append(ebayError);
+                $("#books").append(errorCard);
             }
 
         });
         localStorage.removeItem("searchterm");
         $("#book-input").val("");
+    });
+
+$(document).on("click", ".descriptor", function() {
+
+        //Expand or collapse this panel
+        $(".google-desc").slideToggle("slow");
+        var el = $(this);
+        el.text() === el.data("text-swap")
+        ? el.text(el.data("text-original"))
+        : el.text(el.data("text-swap"));
+
 
     });
 
