@@ -1,0 +1,33 @@
+[debug] [2018-03-20T01:03:35.107Z] ----------------------------------------------------------------------
+[debug] [2018-03-20T01:03:35.109Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Keys\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-20T01:03:35.109Z] CLI Version:   3.17.5
+[debug] [2018-03-20T01:03:35.109Z] Platform:      win32
+[debug] [2018-03-20T01:03:35.109Z] Node Version:  v8.9.3
+[debug] [2018-03-20T01:03:35.110Z] Time:          Mon Mar 19 2018 20:03:35 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:03:35.110Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-20T01:03:35.120Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-20T01:03:35.121Z] > authorizing via signed-in user
+[debug] [2018-03-20T01:03:35.123Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Mon Mar 19 2018 20:03:35 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:03:35.538Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T01:03:35.539Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Mon Mar 19 2018 20:03:35 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:03:35.936Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T01:03:35.937Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Mon Mar 19 2018 20:03:35 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:03:36.207Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Keys\desktop\project1\smarket'...
+[info] 
+[debug] [2018-03-20T01:03:36.214Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Mon Mar 19 2018 20:03:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:03:36.871Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
