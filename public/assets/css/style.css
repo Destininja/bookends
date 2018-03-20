@@ -1,0 +1,93 @@
+.bg-1 {
+    background-color: #474e5d;
+    /* Green */
+    color: #ffffff;
+}
+
+.bg-2 {
+    background-color: #474e5d;
+    /* Dark Blue */
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #ffffff;
+    /* White */
+    color: #555555;
+}
+
+img {
+    max-width: 50%;
+    border: 1px solid white;
+}
+
+body {
+    padding-top: 25px;
+    font-family: 'Bitter', serif;
+}
+
+.ebay-card {
+    width: 18rem;
+    margin: 10px;
+    height: auto;
+    align-items: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+}
+
+.image-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.search-card {
+    width: 15rem;
+    margin: 10px;
+    height: auto;
+    align-items: center;
+}
+
+.search-card-body {
+    text-align: center;
+}
+
+#priorSearches {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
