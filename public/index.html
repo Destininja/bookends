@@ -4,17 +4,19 @@
 <head>
     <title>Bookends</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row account-info-row">
             <div class="col-12">
                 <div id="account-info">
                     <ul>
@@ -36,6 +38,8 @@
                 </div>
             </div>
         </div>
+    </div>
+        <div class="container main">
         <div class="container-fluid bg-1 text-center">
             <img src="assets/images/bookends_logo.png" alt="Bookends">
             <h3>A Better Way To Read</h3>
