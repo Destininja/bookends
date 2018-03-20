@@ -109,7 +109,7 @@ $(document).ready(function () {
 
         ////end of pauls
 
-        var queryURLEbay = "http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=Alexande-BookEnds-PRD-9f1a91299-b1690a3c&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&paginationInput.entriesPerPage=12&categoryID=267&currencyID=USD&keywords=book%" + book;
+        var queryURLEbay = "https://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=Alexande-BookEnds-PRD-9f1a91299-b1690a3c&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&paginationInput.entriesPerPage=12&categoryID=267&currencyID=USD&keywords=book%" + book;
         $.ajax({
             dataType: "jsonp",
             method: "GET",
