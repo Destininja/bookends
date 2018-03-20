@@ -1,5 +1,5 @@
 .bg-1 {
-    background-color: #474e5d;
+    background-color: #006494;
     /* Green */
     color: #ffffff;
 }
@@ -17,13 +17,21 @@
 }
 
 img {
-    max-width: 50%;
-    border: 1px solid white;
+    max-width: 75%;
+    /*border: 1px solid white;*/
 }
 
 body {
-    padding-top: 25px;
+    background-color: #006494;
     font-family: 'Bitter', serif;
+}
+
+.main {
+    margin-top: 25px;
+}
+
+.account-info-row {
+    background-color: beige;
 }
 
 .ebay-card {
@@ -90,4 +98,9 @@ li {
 
 .capitalize {
     text-transform: capitalize;
+}
+
+.remove {
+    display: block;
+    margin: 5px auto;
 }
