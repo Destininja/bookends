@@ -1,3 +1,43 @@
+/* BASE STYLES */
+
+body {
+    background-color: #006494;
+    font-family: 'Bitter', serif;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* ACCOUNT INFORMATION */
+
+.account-info-row {
+    background-color: #F0F7EE;
+    border-bottom: 10px solid #474E5D;
+}
+
+/* HEADER */
+
+.main {
+    margin-top: 25px;
+}
+
+img.banner {
+    max-width: 800px;
+}
+
+/* BACKGROUNDS */
+
 .bg-1 {
     background-color: #006494;
     /* Green */
@@ -16,22 +56,55 @@
     color: #555555;
 }
 
-img.banner {
-    
-    /*border: 1px solid white;*/
+/* CARD STYLES */
+
+.card {
+    background-color: ##F0F7EE;
 }
 
-body {
-    background-color: #006494;
-    font-family: 'Bitter', serif;
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
 }
 
-.main {
-    margin-top: 25px;
+.image-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
 }
 
-.account-info-row {
-    background-color: beige;
+/* RESULTS AREA */
+
+.results-area {
+    width: 90%;
+}
+
+/* GOOGLE RESULTS */
+
+.descriptor {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.google-desc {
+    display: none;
+}
+
+/* EBAY RESULTS */
+
+#books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
 }
 
 .ebay-card {
@@ -46,49 +119,15 @@ body {
     font-size: 1rem!important;
 }
 
-.card-img-top {
-    width: 100%;
-    height: auto;
-    max-width: 150px;
-    max-height: 150px;
-}
 
-#books {
+/* PRIOR SEARCHES */
+
+#priorSearches {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1500px;
-}
-
-.image-holder {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50vw;
-    max-width: 150px;
-    max-height: 150px;
-    margin: 0 auto;
-}
-
-.descriptor {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.google-desc {
-    display: none;
-}
-
-ul {
-    list-style-type: none;
-    display: inline;
-}
-
-li {
-    display: inline-block;
-    margin: 10px;
 }
 
 .search-card {
@@ -102,17 +141,9 @@ li {
     text-align: center;
 }
 
-#priorSearches {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1500px;
-}
 
-.capitalize {
-    text-transform: capitalize;
-}
+
+
 
 .remove {
     display: block;
