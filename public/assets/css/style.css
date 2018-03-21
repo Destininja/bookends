@@ -1,36 +1,89 @@
-.bg-1 {
-    background-color: #474e5d;
-    /* Green */
-    color: #ffffff;
-}
-
-.bg-2 {
-    background-color: #474e5d;
-    /* Dark Blue */
-    color: #ffffff;
-}
-
-.bg-3 {
-    background-color: #ffffff;
-    /* White */
-    color: #555555;
-}
-
-img {
-    max-width: 50%;
-    border: 1px solid white;
+/* BASE STYLES */
+html {
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
 }
 
 body {
-    padding-top: 25px;
+    height: 100%;
+    position: relative;
+    background-color: #006494;
     font-family: 'Bitter', serif;
+    font-size: 1rem;
 }
 
-.ebay-card {
-    width: 18rem;
+ul {
+    list-style-type: none;
+    display: inline;
+}
+
+li {
+    display: inline-block;
     margin: 10px;
-    height: auto;
-    align-items: center;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* WRAPPER */
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 0 100px;
+    position: relative;
+}
+
+/* ACCOUNT INFORMATION */
+
+.account-info-row {
+    background-color: #F0F7EE;
+    border-bottom: 10px solid #474E5D;
+}
+
+/* HEADER */
+
+.header {
+    margin-top: 25px;
+}
+
+img.banner {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* MAIN */
+
+main {
+    margin-bottom: auto;
+    position: relative;
+}
+
+
+/* MIDDLE */
+
+.middle {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* BACKGROUNDS */
+
+.bg-1 {
+    background-color: #006494;
+    color: #ffffff;
+}
+
+/* CARD STYLES */
+
+.card {
+    background-color: #F0F7EE;
+    border: 10px solid #474e5d;
 }
 
 .card-img-top {
@@ -38,14 +91,7 @@ body {
     height: auto;
     max-width: 150px;
     max-height: 150px;
-}
-
-#books {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1500px;
+    margin-top: 20px;
 }
 
 .image-holder {
@@ -59,14 +105,146 @@ body {
     margin: 0 auto;
 }
 
-ul {
-    list-style-type: none;
-    display: inline;
+.google-card .image-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 350px;
+    max-height: 350px;
+    margin: 10px auto 0 auto;
 }
 
-li {
+.google-card .card-img-top {
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+}
+
+/* TABS */
+
+ul#tabs {
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0 0 0 0;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    display: none;
+    width: 100%;
+    table-layout: fixed;
+}
+
+ul#tabs li {
+    display: inline;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 5%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+}
+
+ul#tabs li h3 {
     display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+ul#tabs li:hover h3 {
+   color: black; 
+}
+    
+ul#tabs li.active h3 {
+    color: black;
+    cursor: auto;
+}
+
+ul#tab {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul#tab li {
+    display: flex;
+    padding: 10px 0 0 0;
+}
+
+ul#tab li.active {
+    display: block;
+}
+
+/* RESULTS AREA */
+
+.results-area {
+    width: 90%;
+    height: auto;
+}
+
+.error-card {
+    width: 100%;
+    padding: 20px;
+    height: 25vw;
+    min-height: 150px;
+    margin: 10px auto;
+}
+
+/* GOOGLE RESULTS */
+
+.descriptor {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.google-desc {
+    display: none;
+}
+
+.google-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 90%;
+}
+
+/* EBAY RESULTS */
+
+#books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+    margin-left: 5px;
+}
+
+.ebay-card {
+    width: 100%;
+    max-width: 18rem;
     margin: 10px;
+    height: auto;
+    align-items: center;
+}
+
+.ebay-card .card-title {
+    font-size: 1rem!important;
+}
+
+
+/* PRIOR SEARCHES */
+
+#priorSearches {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .search-card {
@@ -80,14 +258,54 @@ li {
     text-align: center;
 }
 
-#priorSearches {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1500px;
+.remove {
+    display: block;
+    margin: 5px auto;
 }
 
-.capitalize {
-    text-transform: capitalize;
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+    #books {
+        margin-left: 0;
+    }
+}
+
+/* Tablet portrait */
+
+@media screen and (max-width: 798px) {
+    .ebay-card {
+        max-width: none;
+        margin: 10px auto;
+    }
+    .table-display {
+        display: table;
+    }
+    
+    ul#tab li {
+    display: none;
+    }
 }

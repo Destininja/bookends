@@ -2,9 +2,12 @@ $(document).ready(function() {
     
     var provider = new firebase.auth.GoogleAuthProvider();
     var database = firebase.database();
+    var uid;
+    console.log(database);
+
 
     function priorSearches() {
-    var uid = firebase.auth().currentUser.uid;
+    uid = firebase.auth().currentUser.uid;
 
     database.ref().child('users/').child(uid).child('books/')
         .on("value", function(userSnapshot) {
@@ -15,20 +18,16 @@ $(document).ready(function() {
             var sv = snapshot.val();
 
             // store the snapshot key in a variable
-            key = snapshot.key;
+            var key = snapshot.key;
             console.log(key);
 
                 var cardTitle = $("<h5 class='card-title capitalize'>").text(sv);
                 var bookLink = $("<a target='_blank' class='btn btn-primary bookSearch'>").attr("href", "index.html").text("Search again");
                 bookLink.attr("data-id", sv);
-                var cardBody = $("<div class='card-body search-card-body'>").append(cardTitle, bookLink);
+                var remove = $("<button type='submit' class='remove btn btn-primary btn-sm'><i class='fa fa-trash'></i></button>").attr("data-key", key);
+                var cardBody = $("<div class='card-body search-card-body'>").append(cardTitle, bookLink, remove);
                 var card = $("<div class='card search-card'>").append(cardBody);
                 $("#priorSearches").append(card);
-            
-
-            // create button to remove train from table and database
-            //var remove = $("<td class='text-center'><button type='submit' class='remove btn btn-primary btn-sm'><i class='fa fa-trash'></i> Remove</button></td>");
-
                 });
 
             // Handle the errors
@@ -76,11 +75,10 @@ $(document).ready(function() {
 
     function googleSignout() {
         firebase.auth().signOut()
-
             .then(function() {
-                console.log('Signout Successful')
+                console.log('Signout Successful');
             }, function(error) {
-                console.log('Signout Failed')
+                console.log('Signout Failed');
             });
     }
 
@@ -92,9 +90,21 @@ $(document).ready(function() {
         googleSignout();
     });
 
-});
-
 $(document).on("click", ".bookSearch", function() {
     searchTerm = $(this).attr("data-id");
     localStorage.setItem("searchterm", searchTerm);
+});
+
+$(document).on("click", ".fa-home", function() {
+    localStorage.removeItem("searchterm");
+});
+
+$(document).on("click", ".remove", function(e) {
+        e.preventDefault();
+        var key = $(this).attr("data-key");
+        $(this).closest(".search-card").remove();
+        // var id = $(this).closest("tr").data("id");
+        database.ref().child('users/').child(uid).child('books/').child(key).remove();
+    });
+
 });

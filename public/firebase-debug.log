@@ -1,0 +1,497 @@
+[debug] [2018-03-20T01:03:35.107Z] ----------------------------------------------------------------------
+[debug] [2018-03-20T01:03:35.109Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Keys\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-20T01:03:35.109Z] CLI Version:   3.17.5
+[debug] [2018-03-20T01:03:35.109Z] Platform:      win32
+[debug] [2018-03-20T01:03:35.109Z] Node Version:  v8.9.3
+[debug] [2018-03-20T01:03:35.110Z] Time:          Mon Mar 19 2018 20:03:35 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:03:35.110Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-20T01:03:35.120Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-20T01:03:35.121Z] > authorizing via signed-in user
+[debug] [2018-03-20T01:03:35.123Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Mon Mar 19 2018 20:03:35 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:03:35.538Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T01:03:35.539Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Mon Mar 19 2018 20:03:35 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:03:35.936Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T01:03:35.937Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Mon Mar 19 2018 20:03:35 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:03:36.207Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Keys\desktop\project1\smarket'...
+[info] 
+[debug] [2018-03-20T01:03:36.214Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Mon Mar 19 2018 20:03:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:03:36.871Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-20T01:11:27.264Z] ----------------------------------------------------------------------
+[debug] [2018-03-20T01:11:27.280Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-20T01:11:27.280Z] CLI Version:   3.17.6
+[debug] [2018-03-20T01:11:27.280Z] Platform:      win32
+[debug] [2018-03-20T01:11:27.280Z] Node Version:  v8.9.4
+[debug] [2018-03-20T01:11:27.280Z] Time:          Mon Mar 19 2018 20:11:27 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:11:27.280Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-20T01:11:27.280Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-20T01:11:27.280Z] > authorizing via signed-in user
+[debug] [2018-03-20T01:11:27.280Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Mon Mar 19 2018 20:11:27 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:11:27.640Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T01:11:27.640Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Mon Mar 19 2018 20:11:27 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:11:27.939Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T01:11:27.939Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Mon Mar 19 2018 20:11:27 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:11:28.146Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-20T01:11:28.161Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Mon Mar 19 2018 20:11:28 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T01:11:28.450Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-03-20T13:39:18.530Z] ----------------------------------------------------------------------
+[debug] [2018-03-20T13:39:18.530Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-20T13:39:18.530Z] CLI Version:   3.17.6
+[debug] [2018-03-20T13:39:18.530Z] Platform:      win32
+[debug] [2018-03-20T13:39:18.530Z] Node Version:  v8.9.4
+[debug] [2018-03-20T13:39:18.546Z] Time:          Tue Mar 20 2018 08:39:18 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T13:39:18.546Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-20T13:39:18.546Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-20T13:39:18.546Z] > authorizing via signed-in user
+[debug] [2018-03-20T13:39:18.546Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-20T13:39:18.546Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/khVh19_U3XsRlhrJtg3uf3PkfOvhOUIdWJxSF9URTH8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Mar 20 2018 08:39:18 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T13:39:18.749Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T13:39:18.780Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 08:39:18 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T13:39:19.671Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T13:39:19.671Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Tue Mar 20 2018 08:39:19 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T13:39:20.468Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T13:39:20.468Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 08:39:20 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T13:39:21.288Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-20T13:39:21.303Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Tue Mar 20 2018 08:39:21 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T13:39:22.135Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-03-20T15:39:16.937Z] ----------------------------------------------------------------------
+[debug] [2018-03-20T15:39:16.953Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-20T15:39:16.953Z] CLI Version:   3.17.6
+[debug] [2018-03-20T15:39:16.953Z] Platform:      win32
+[debug] [2018-03-20T15:39:16.953Z] Node Version:  v8.9.4
+[debug] [2018-03-20T15:39:16.953Z] Time:          Tue Mar 20 2018 10:39:16 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T15:39:16.953Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-20T15:39:16.953Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-20T15:39:16.953Z] > authorizing via signed-in user
+[debug] [2018-03-20T15:39:16.953Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-20T15:39:16.953Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/khVh19_U3XsRlhrJtg3uf3PkfOvhOUIdWJxSF9URTH8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Mar 20 2018 10:39:16 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T15:39:17.151Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T15:39:17.292Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 10:39:17 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T15:39:17.850Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T15:39:17.850Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Tue Mar 20 2018 10:39:17 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T15:39:18.334Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T15:39:18.334Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 10:39:18 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T15:39:18.865Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-20T15:39:18.865Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Tue Mar 20 2018 10:39:18 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T15:39:19.544Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-20T20:39:37.972Z] ----------------------------------------------------------------------
+[debug] [2018-03-20T20:39:37.972Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-20T20:39:37.972Z] CLI Version:   3.17.6
+[debug] [2018-03-20T20:39:37.972Z] Platform:      win32
+[debug] [2018-03-20T20:39:37.972Z] Node Version:  v8.9.4
+[debug] [2018-03-20T20:39:37.972Z] Time:          Tue Mar 20 2018 15:39:37 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T20:39:37.972Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-20T20:39:37.987Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-20T20:39:37.987Z] > authorizing via signed-in user
+[debug] [2018-03-20T20:39:37.987Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-20T20:39:37.987Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/khVh19_U3XsRlhrJtg3uf3PkfOvhOUIdWJxSF9URTH8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Mar 20 2018 15:39:37 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T20:39:38.442Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T20:39:38.568Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 15:39:38 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T20:39:39.021Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T20:39:39.036Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Tue Mar 20 2018 15:39:39 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T20:39:39.349Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T20:39:39.349Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 15:39:39 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T20:39:39.837Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-20T20:39:39.837Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Tue Mar 20 2018 15:39:39 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T20:39:40.481Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-03-20T23:24:39.791Z] ----------------------------------------------------------------------
+[debug] [2018-03-20T23:24:39.791Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-20T23:24:39.791Z] CLI Version:   3.17.6
+[debug] [2018-03-20T23:24:39.791Z] Platform:      win32
+[debug] [2018-03-20T23:24:39.791Z] Node Version:  v8.9.4
+[debug] [2018-03-20T23:24:39.791Z] Time:          Tue Mar 20 2018 18:24:39 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T23:24:39.791Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-20T23:24:39.845Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-20T23:24:39.860Z] > authorizing via signed-in user
+[debug] [2018-03-20T23:24:39.860Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-20T23:24:39.860Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/khVh19_U3XsRlhrJtg3uf3PkfOvhOUIdWJxSF9URTH8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Mar 20 2018 18:24:39 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T23:24:40.199Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T23:24:40.299Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 18:24:40 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T23:24:40.874Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T23:24:40.874Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Tue Mar 20 2018 18:24:40 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T23:24:41.315Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T23:24:41.315Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 18:24:41 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T23:24:41.658Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-20T23:24:41.783Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Tue Mar 20 2018 18:24:41 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T23:24:42.193Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-20T23:47:05.142Z] ----------------------------------------------------------------------
+[debug] [2018-03-20T23:47:05.158Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-20T23:47:05.158Z] CLI Version:   3.17.6
+[debug] [2018-03-20T23:47:05.158Z] Platform:      win32
+[debug] [2018-03-20T23:47:05.158Z] Node Version:  v8.9.4
+[debug] [2018-03-20T23:47:05.158Z] Time:          Tue Mar 20 2018 18:47:05 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T23:47:05.158Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-20T23:47:05.158Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-20T23:47:05.158Z] > authorizing via signed-in user
+[debug] [2018-03-20T23:47:05.158Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 18:47:05 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T23:47:05.564Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T23:47:05.564Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Tue Mar 20 2018 18:47:05 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T23:47:06.002Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-20T23:47:06.002Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 18:47:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T23:47:06.283Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-20T23:47:06.299Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Tue Mar 20 2018 18:47:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-20T23:47:06.830Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-21T00:29:31.513Z] ----------------------------------------------------------------------
+[debug] [2018-03-21T00:29:31.513Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-21T00:29:31.513Z] CLI Version:   3.17.6
+[debug] [2018-03-21T00:29:31.513Z] Platform:      win32
+[debug] [2018-03-21T00:29:31.513Z] Node Version:  v8.9.4
+[debug] [2018-03-21T00:29:31.513Z] Time:          Tue Mar 20 2018 19:29:31 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T00:29:31.513Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-21T00:29:31.529Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-21T00:29:31.529Z] > authorizing via signed-in user
+[debug] [2018-03-21T00:29:31.529Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-21T00:29:31.529Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/khVh19_U3XsRlhrJtg3uf3PkfOvhOUIdWJxSF9URTH8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Mar 20 2018 19:29:31 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T00:29:31.782Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T00:29:31.819Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 19:29:31 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T00:29:32.197Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T00:29:32.201Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Tue Mar 20 2018 19:29:32 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T00:29:32.623Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T00:29:32.627Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 19:29:32 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T00:29:32.937Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-21T00:29:32.952Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Tue Mar 20 2018 19:29:32 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T00:29:33.437Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-21T01:13:19.236Z] ----------------------------------------------------------------------
+[debug] [2018-03-21T01:13:19.236Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-21T01:13:19.236Z] CLI Version:   3.17.6
+[debug] [2018-03-21T01:13:19.236Z] Platform:      win32
+[debug] [2018-03-21T01:13:19.236Z] Node Version:  v8.9.4
+[debug] [2018-03-21T01:13:19.240Z] Time:          Tue Mar 20 2018 20:13:19 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T01:13:19.240Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-21T01:13:19.248Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-21T01:13:19.248Z] > authorizing via signed-in user
+[debug] [2018-03-21T01:13:19.252Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 20:13:19 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T01:13:19.664Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T01:13:19.664Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Tue Mar 20 2018 20:13:19 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T01:13:20.131Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T01:13:20.146Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 20:13:20 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T01:13:20.553Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-21T01:13:20.553Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Tue Mar 20 2018 20:13:20 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T01:13:20.959Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-21T15:14:32.113Z] ----------------------------------------------------------------------
+[debug] [2018-03-21T15:14:32.113Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-21T15:14:32.113Z] CLI Version:   3.17.6
+[debug] [2018-03-21T15:14:32.113Z] Platform:      win32
+[debug] [2018-03-21T15:14:32.113Z] Node Version:  v8.9.4
+[debug] [2018-03-21T15:14:32.113Z] Time:          Wed Mar 21 2018 10:14:32 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T15:14:32.113Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-21T15:14:32.129Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-21T15:14:32.129Z] > authorizing via signed-in user
+[debug] [2018-03-21T15:14:32.129Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-21T15:14:32.129Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/khVh19_U3XsRlhrJtg3uf3PkfOvhOUIdWJxSF9URTH8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Mar 21 2018 10:14:32 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T15:14:32.578Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T15:14:32.610Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 10:14:32 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T15:14:33.472Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T15:14:33.472Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Wed Mar 21 2018 10:14:33 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T15:14:33.863Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T15:14:33.863Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 10:14:33 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T15:14:34.706Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-21T15:14:34.706Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Wed Mar 21 2018 10:14:34 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T15:14:35.120Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-03-21T17:43:44.561Z] ----------------------------------------------------------------------
+[debug] [2018-03-21T17:43:44.561Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-21T17:43:44.561Z] CLI Version:   3.17.6
+[debug] [2018-03-21T17:43:44.561Z] Platform:      win32
+[debug] [2018-03-21T17:43:44.561Z] Node Version:  v8.9.4
+[debug] [2018-03-21T17:43:44.561Z] Time:          Wed Mar 21 2018 12:43:44 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T17:43:44.561Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-21T17:43:44.577Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-21T17:43:44.577Z] > authorizing via signed-in user
+[debug] [2018-03-21T17:43:44.577Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-21T17:43:44.577Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/khVh19_U3XsRlhrJtg3uf3PkfOvhOUIdWJxSF9URTH8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Mar 21 2018 12:43:44 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T17:43:44.842Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T17:43:44.983Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 12:43:44 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T17:43:45.436Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T17:43:45.436Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Wed Mar 21 2018 12:43:45 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T17:43:45.984Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T17:43:45.984Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 12:43:45 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T17:43:46.489Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-21T17:43:46.505Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Wed Mar 21 2018 12:43:46 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T17:43:47.225Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-21T21:05:10.290Z] ----------------------------------------------------------------------
+[debug] [2018-03-21T21:05:10.290Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-21T21:05:10.290Z] CLI Version:   3.17.6
+[debug] [2018-03-21T21:05:10.290Z] Platform:      win32
+[debug] [2018-03-21T21:05:10.290Z] Node Version:  v8.9.4
+[debug] [2018-03-21T21:05:10.290Z] Time:          Wed Mar 21 2018 16:05:10 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T21:05:10.290Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-21T21:05:10.306Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-21T21:05:10.306Z] > authorizing via signed-in user
+[debug] [2018-03-21T21:05:10.306Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-21T21:05:10.306Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/khVh19_U3XsRlhrJtg3uf3PkfOvhOUIdWJxSF9URTH8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Mar 21 2018 16:05:10 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T21:05:10.541Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T21:05:10.681Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 16:05:10 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T21:05:11.241Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T21:05:11.241Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Wed Mar 21 2018 16:05:11 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T21:05:11.558Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T21:05:11.558Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 16:05:11 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T21:05:12.296Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-21T21:05:12.296Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Wed Mar 21 2018 16:05:12 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T21:05:12.995Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-21T21:26:11.704Z] ----------------------------------------------------------------------
+[debug] [2018-03-21T21:26:11.704Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-21T21:26:11.704Z] CLI Version:   3.17.6
+[debug] [2018-03-21T21:26:11.704Z] Platform:      win32
+[debug] [2018-03-21T21:26:11.704Z] Node Version:  v8.9.4
+[debug] [2018-03-21T21:26:11.704Z] Time:          Wed Mar 21 2018 16:26:11 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T21:26:11.704Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-21T21:26:11.720Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-21T21:26:11.720Z] > authorizing via signed-in user
+[debug] [2018-03-21T21:26:11.720Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 16:26:11 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T21:26:12.186Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T21:26:12.186Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Wed Mar 21 2018 16:26:12 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T21:26:12.467Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T21:26:12.467Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 16:26:12 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T21:26:13.121Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-21T21:26:13.121Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Wed Mar 21 2018 16:26:13 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T21:26:14.904Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
