@@ -16,44 +16,56 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row account-info-row">
-            <div class="col-12">
-                <div id="account-info">
-                    <ul>
-                        <li>
-                            <button id="signIn">Sign In</button>
-                        </li>
-                        <li>
-                            <button id="signOut">Sign Out</button>
-                        </li>
-                        <li>
-                            <a href="account.html">
-                                <p id="userName"></p>
-                            </a>
-                        </li>
-                        <li>
-                            <p id="userEmail"></p>
-                        </li>
-                        <li>
-                            <a href="index.html"><i class="fa fa-home"></i></a>
-                        </li>
-                    </ul>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row account-info-row">
+                <div class="col-12">
+                    <div id="account-info">
+                        <ul>
+                            <li>
+                                <button id="signIn">Sign In</button>
+                            </li>
+                            <li>
+                                <button id="signOut">Sign Out</button>
+                            </li>
+                            <li>
+                                <a href="account.html">
+                                    <p id="userName"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <p id="userEmail"></p>
+                            </li>
+                            <li>
+                                <a href="index.html"><i class="fa fa-home"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid main">
-        <div class="container-fluid bg-1 text-center">
-            <img class="banner img-fluid" src="assets/images/bookends_logo.png" alt="Bookends">
-            <h3 class="mt-3">Book Discovery and Beyond</h3>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div id="priorSearches">
-                </div>
+        <div class="container-fluid header">
+            <div class="container-fluid bg-1 text-center">
+                <img class="banner img-fluid" src="assets/images/bookends_logo.png" alt="Bookends">
+                <h3 class="mt-3">Book Discovery and Beyond</h3>
             </div>
         </div>
+        <main>
+            <div class="container-fluid middle">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="priorSearches">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;
+                <script type="text/javascript">
+                document.write(new Date().getFullYear());
+                </script> The BookEnds Group</p>
+        </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/setup.js"></script>

@@ -1,6 +1,13 @@
 /* BASE STYLES */
+html {
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+}
 
 body {
+    height: 100%;
+    position: relative;
     background-color: #006494;
     font-family: 'Bitter', serif;
     font-size: 1rem;
@@ -20,6 +27,15 @@ li {
     text-transform: capitalize;
 }
 
+/* WRAPPER */
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 0 100px;
+    position: relative;
+}
+
 /* ACCOUNT INFORMATION */
 
 .account-info-row {
@@ -29,7 +45,7 @@ li {
 
 /* HEADER */
 
-.main {
+.header {
     margin-top: 25px;
 }
 
@@ -38,24 +54,29 @@ img.banner {
     width: 100%;
 }
 
+/* MAIN */
+
+main {
+    margin-bottom: auto;
+    position: relative;
+}
+
+
+/* MIDDLE */
+
+.middle {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
 /* BACKGROUNDS */
 
 .bg-1 {
     background-color: #006494;
-    /* Green */
     color: #ffffff;
-}
-
-.bg-2 {
-    background-color: #474e5d;
-    /* Dark Blue */
-    color: #ffffff;
-}
-
-.bg-3 {
-    background-color: #ffffff;
-    /* White */
-    color: #555555;
 }
 
 /* CARD STYLES */
@@ -221,6 +242,7 @@ ul#tab li.active {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1500px;
+    margin: 0 auto;
 }
 
 .search-card {
@@ -237,6 +259,31 @@ ul#tab li.active {
 .remove {
     display: block;
     margin: 5px auto;
+}
+
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
 }
 
 /* Tablet portrait */
