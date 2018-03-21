@@ -306,3 +306,36 @@
 
 [info] Shutting down...
 >>>>>>> 7ad26e7bcf202c13e18b7f9d1be41c01e0e131ec
+[debug] [2018-03-21T00:23:12.521Z] ----------------------------------------------------------------------
+[debug] [2018-03-21T00:23:12.523Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Keys\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-21T00:23:12.523Z] CLI Version:   3.17.5
+[debug] [2018-03-21T00:23:12.523Z] Platform:      win32
+[debug] [2018-03-21T00:23:12.523Z] Node Version:  v8.9.3
+[debug] [2018-03-21T00:23:12.523Z] Time:          Tue Mar 20 2018 19:23:12 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T00:23:12.523Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-21T00:23:12.533Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-21T00:23:12.534Z] > authorizing via signed-in user
+[debug] [2018-03-21T00:23:12.536Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 19:23:12 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T00:23:12.936Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T00:23:12.937Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Tue Mar 20 2018 19:23:12 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T00:23:13.300Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T00:23:13.300Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 19:23:13 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T00:23:13.633Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Keys\Desktop\project1\smarket'...
+[info] 
+[debug] [2018-03-21T00:23:13.639Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Tue Mar 20 2018 19:23:13 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T00:23:14.064Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
