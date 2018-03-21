@@ -288,15 +288,18 @@ footer p {
     font-size: 2rem;
 }
 
+@media screen and (max-width: 991px) {
+    #books {
+        margin-left: 0;
+    }
+}
+
 /* Tablet portrait */
 
 @media screen and (max-width: 798px) {
     .ebay-card {
         max-width: none;
         margin: 10px auto;
-    }
-    #books {
-        margin-left: 0;
     }
     .table-display {
         display: table;
