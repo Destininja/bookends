@@ -34,6 +34,7 @@ li {
 
 img.banner {
     max-width: 800px;
+    width: 100%;
 }
 
 /* BACKGROUNDS */
@@ -59,7 +60,8 @@ img.banner {
 /* CARD STYLES */
 
 .card {
-    background-color: ##F0F7EE;
+    background-color: #F0F7EE;
+    border: 10px solid #474e5d;
 }
 
 .card-img-top {
@@ -84,6 +86,13 @@ img.banner {
 
 .results-area {
     width: 90%;
+    height: auto;
+}
+
+.error-card {
+    padding: 20px;
+    height: 25vw;
+    min-height: 150px;
 }
 
 /* GOOGLE RESULTS */
@@ -95,6 +104,11 @@ img.banner {
 
 .google-desc {
     display: none;
+}
+
+.google-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* EBAY RESULTS */
