@@ -88,11 +88,11 @@ $(document).ready(function() {
             method: "GET",
             dataType: "jsonp"
         }).then(function(response) {
-            var data = response.items[0].volumeInfo;
+
+            if (response.items) {
+
+                var data = response.items[0].volumeInfo;
             console.log(data);
-
-            if (data) {
-
                 var googleImage = $("<img class='card-img-top'>").attr("src", data.imageLinks.thumbnail);
                 var googleHolder = $("<div class='image-holder'>");
                 googleHolder.append(googleImage);
@@ -109,7 +109,8 @@ $(document).ready(function() {
                 $("#googleDisplay").append(googleCard);
             } else {
                 var googleError = $("<p>").text("No results found. Please try searching again.");
-                $("#googleDisplay").append(googleError);
+                var errorCard = $("<div class='card error-card'>").append(googleError);
+                $("#googleDisplay").append(errorCard);
             }
 
         });
