@@ -101,6 +101,10 @@ $(document).on("click", ".bookSearch", function() {
     localStorage.setItem("searchterm", searchTerm);
 });
 
+$(document).on("click", ".fa-home", function() {
+    localStorage.removeItem("searchterm");
+});
+
 $(document).on("click", ".remove", function(e) {
         e.preventDefault();
         var key = $(this).attr("data-key");
