@@ -133,7 +133,12 @@ $(document).ready(function() {
 
                     var cardTitle = $("<h5 class='card-title'>").text(results[i].title);
                     console.log(results[i].title);
-                    var bookImage = $("<img class='card-img-top'>").attr("src", results[i].galleryURL);
+                    var bookImage;
+                    if (results[i].galleryURL) {
+                        bookImage = $("<img class='card-img-top'>").attr("src", results[i].galleryURL);    
+                    } else {
+                        bookImage = $("<img class='card-img-top'>").attr("src", "assets/images/no_image.png");
+                    }
                     var imageHolder = $("<div class='image-holder'>");
                     imageHolder.append(bookImage);
                     console.log(results[i].galleryURL);
