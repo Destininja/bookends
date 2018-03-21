@@ -188,9 +188,11 @@ ul#tab li.active {
 }
 
 .error-card {
+    width: 100%;
     padding: 20px;
     height: 25vw;
     min-height: 150px;
+    margin: 10px auto;
 }
 
 /* GOOGLE RESULTS */
@@ -293,10 +295,14 @@ footer p {
         max-width: none;
         margin: 10px auto;
     }
+    #books {
+        margin-left: 0;
+    }
     .table-display {
         display: table;
     }
-
+    
     ul#tab li {
     display: none;
     }
+}

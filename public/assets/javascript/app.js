@@ -155,7 +155,7 @@ $(document).ready(function() {
                     $("#books").append(card);
                 }
             } else {
-                var ebayError = $("<p>").html("No results found. Try searching on <a href='https://www.ebay.com'>eBay</a> instead.");
+                var ebayError = $("<p>").html("No results found. Try searching on <a href='https://www.ebay.com' target='_blank'>eBay</a> instead.");
                 var errorCard = $("<div class='card error-card'>").append(ebayError);
                 $("#books").append(errorCard);
             }
