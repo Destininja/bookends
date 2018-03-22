@@ -39,7 +39,12 @@ $(document).ready(function() {
     firebase.auth().onAuthStateChanged(function(user) {
         window.user = user; // user is undefined if no user signed in
         console.log(user);
-        if (user) {
+
+        if (user === null && window.location.pathname !== "/"){
+            window.location.assign("index.html");
+        }
+
+        if (user !== null) {
             $("#signIn").hide();
             $("#signOut").show();
             $("#userName").text(user.displayName + " (My Account)");
