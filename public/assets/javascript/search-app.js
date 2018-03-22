@@ -41,7 +41,7 @@ $(document).ready(function() {
         console.log(user);
 
         if (user === null && window.location.pathname !== "/"){
-            window.location.assign("/");
+            window.location.assign("index.html");
         }
 
         if (user !== null) {
