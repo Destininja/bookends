@@ -123,3 +123,69 @@
 [info] +  hosting: Local server: http://localhost:5000
 
 [info] Shutting down...
+[debug] [2018-03-22T22:11:46.886Z] ----------------------------------------------------------------------
+[debug] [2018-03-22T22:11:46.902Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-22T22:11:46.902Z] CLI Version:   3.17.6
+[debug] [2018-03-22T22:11:46.902Z] Platform:      win32
+[debug] [2018-03-22T22:11:46.902Z] Node Version:  v8.9.4
+[debug] [2018-03-22T22:11:46.902Z] Time:          Thu Mar 22 2018 17:11:46 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T22:11:46.902Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-22T22:11:46.902Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-22T22:11:46.902Z] > authorizing via signed-in user
+[debug] [2018-03-22T22:11:46.902Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Thu Mar 22 2018 17:11:46 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T22:11:47.332Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T22:11:47.333Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Thu Mar 22 2018 17:11:47 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T22:11:47.613Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T22:11:47.614Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Thu Mar 22 2018 17:11:47 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T22:11:48.108Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-22T22:11:48.108Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Thu Mar 22 2018 17:11:48 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T22:11:48.748Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-22T22:20:29.414Z] ----------------------------------------------------------------------
+[debug] [2018-03-22T22:20:29.416Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-22T22:20:29.416Z] CLI Version:   3.17.6
+[debug] [2018-03-22T22:20:29.416Z] Platform:      win32
+[debug] [2018-03-22T22:20:29.416Z] Node Version:  v8.9.4
+[debug] [2018-03-22T22:20:29.417Z] Time:          Thu Mar 22 2018 17:20:29 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T22:20:29.417Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-22T22:20:29.528Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-22T22:20:29.528Z] > authorizing via signed-in user
+[debug] [2018-03-22T22:20:29.531Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Thu Mar 22 2018 17:20:29 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T22:20:29.893Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T22:20:29.893Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Thu Mar 22 2018 17:20:29 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T22:20:30.335Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T22:20:30.336Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Thu Mar 22 2018 17:20:30 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T22:20:30.869Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-22T22:20:30.885Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Thu Mar 22 2018 17:20:30 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T22:20:31.214Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
