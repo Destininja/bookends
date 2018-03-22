@@ -92,7 +92,7 @@ $(document).ready(function() {
             if (response.items) {
 
                 var data = response.items[0].volumeInfo;
-            console.log(data);
+                console.log(data);
                 var googleImage = $("<img class='card-img-top'>").attr("src", data.imageLinks.thumbnail);
                 var googleHolder = $("<div class='image-holder'>");
                 googleHolder.append(googleImage);
@@ -135,7 +135,11 @@ $(document).ready(function() {
                     console.log(results[i].title);
                     var bookImage;
                     if (results[i].galleryURL) {
-                        bookImage = $("<img class='card-img-top'>").attr("src", results[i].galleryURL);    
+                        var url = results[i].galleryURL[0];
+
+                        url = url.replace("http://", "https://");
+
+                        bookImage = $("<img class='card-img-top'>").attr("src", url);
                     } else {
                         bookImage = $("<img class='card-img-top'>").attr("src", "assets/images/no_image.png");
                     }
@@ -165,14 +169,14 @@ $(document).ready(function() {
         $("#book-input").val("");
     });
 
-$(document).on("click", ".descriptor", function() {
+    $(document).on("click", ".descriptor", function() {
 
         //Expand or collapse this panel
         $(".google-desc").slideToggle("slow");
         var el = $(this);
-        el.text() === el.data("text-swap")
-        ? el.text(el.data("text-original"))
-        : el.text(el.data("text-swap"));
+        el.text() === el.data("text-swap") ?
+            el.text(el.data("text-original")) :
+            el.text(el.data("text-swap"));
 
 
     });
