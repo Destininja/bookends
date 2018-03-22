@@ -40,7 +40,7 @@ $(document).ready(function() {
         window.user = user; // user is undefined if no user signed in
         console.log(user);
 
-        if (user === null && window.location.pathname !== "/"){
+        if (user === null && window.location.pathname !== "index.html"){
             window.location.assign("index.html");
         }
 
