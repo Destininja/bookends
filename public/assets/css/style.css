@@ -8,9 +8,12 @@ html {
 body {
     height: 100%;
     position: relative;
-    background-color: #006494;
+    background-color: #1883A5;
     font-family: 'Bitter', serif;
     font-size: 1rem;
+    animation: fadeIn 1s ease-in-out 0s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
 }
 
 ul {
@@ -39,7 +42,7 @@ li {
 /* ACCOUNT INFORMATION */
 
 .account-info-row {
-    background-color: #F0F7EE;
+    background-color: #F8F7FF;
     border-bottom: 10px solid #474E5D;
 }
 
@@ -75,15 +78,15 @@ main {
 /* BACKGROUNDS */
 
 .bg-1 {
-    background-color: #006494;
+    background-color: #1883A5;
     color: #ffffff;
 }
 
 /* CARD STYLES */
 
 .card {
-    background-color: #F0F7EE;
-    border: 10px solid #474e5d;
+    background-color: #F8F7FF;
+    border: 0 solid #474e5d;
 }
 
 .card-img-top {
@@ -288,6 +291,19 @@ footer p {
     font-size: 2rem;
 }
 
+/* ANIMATIONS */
+
+/* FADE IN */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 991px) {
     #books {
         margin-left: 0;
@@ -309,3 +325,5 @@ footer p {
     display: none;
     }
 }
+
+
