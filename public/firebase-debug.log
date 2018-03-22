@@ -495,3 +495,87 @@
 [info] +  hosting: Local server: http://localhost:5000
 
 [info] Shutting down...
+[debug] [2018-03-21T22:59:06.100Z] ----------------------------------------------------------------------
+[debug] [2018-03-21T22:59:06.100Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-21T22:59:06.100Z] CLI Version:   3.17.6
+[debug] [2018-03-21T22:59:06.100Z] Platform:      win32
+[debug] [2018-03-21T22:59:06.100Z] Node Version:  v8.9.4
+[debug] [2018-03-21T22:59:06.100Z] Time:          Wed Mar 21 2018 17:59:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T22:59:06.100Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-21T22:59:06.115Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-21T22:59:06.115Z] > authorizing via signed-in user
+[debug] [2018-03-21T22:59:06.115Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-21T22:59:06.115Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/khVh19_U3XsRlhrJtg3uf3PkfOvhOUIdWJxSF9URTH8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Mar 21 2018 17:59:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T22:59:06.357Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T22:59:06.399Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 17:59:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T22:59:06.822Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T22:59:06.822Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Wed Mar 21 2018 17:59:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T22:59:07.261Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T22:59:07.276Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 17:59:07 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T22:59:07.666Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-21T22:59:07.666Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Wed Mar 21 2018 17:59:07 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T22:59:08.073Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-22T00:50:35.988Z] ----------------------------------------------------------------------
+[debug] [2018-03-22T00:50:36.004Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-22T00:50:36.004Z] CLI Version:   3.17.6
+[debug] [2018-03-22T00:50:36.004Z] Platform:      win32
+[debug] [2018-03-22T00:50:36.004Z] Node Version:  v8.9.4
+[debug] [2018-03-22T00:50:36.004Z] Time:          Wed Mar 21 2018 19:50:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T00:50:36.004Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-22T00:50:36.004Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-22T00:50:36.004Z] > authorizing via signed-in user
+[debug] [2018-03-22T00:50:36.020Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-22T00:50:36.020Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/khVh19_U3XsRlhrJtg3uf3PkfOvhOUIdWJxSF9URTH8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Mar 21 2018 19:50:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T00:50:36.270Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T00:50:36.301Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 19:50:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T00:50:36.652Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T00:50:36.652Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Wed Mar 21 2018 19:50:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T00:50:36.995Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T00:50:36.995Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Wed Mar 21 2018 19:50:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T00:50:37.152Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-22T00:50:37.167Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Wed Mar 21 2018 19:50:37 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T00:50:37.405Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
