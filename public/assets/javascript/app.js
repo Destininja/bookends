@@ -88,11 +88,11 @@ $(document).ready(function() {
             method: "GET",
             dataType: "jsonp"
         }).then(function(response) {
-            var data = response.items[0].volumeInfo;
+
+            if (response.items) {
+
+                var data = response.items[0].volumeInfo;
             console.log(data);
-
-            if (data) {
-
                 var googleImage = $("<img class='card-img-top'>").attr("src", data.imageLinks.thumbnail);
                 var googleHolder = $("<div class='image-holder'>");
                 googleHolder.append(googleImage);
@@ -109,7 +109,8 @@ $(document).ready(function() {
                 $("#googleDisplay").append(googleCard);
             } else {
                 var googleError = $("<p>").text("No results found. Please try searching again.");
-                $("#googleDisplay").append(googleError);
+                var errorCard = $("<div class='card error-card'>").append(googleError);
+                $("#googleDisplay").append(errorCard);
             }
 
         });
@@ -132,7 +133,12 @@ $(document).ready(function() {
 
                     var cardTitle = $("<h5 class='card-title'>").text(results[i].title);
                     console.log(results[i].title);
-                    var bookImage = $("<img class='card-img-top'>").attr("src", results[i].galleryURL);
+                    var bookImage;
+                    if (results[i].galleryURL) {
+                        bookImage = $("<img class='card-img-top'>").attr("src", results[i].galleryURL);    
+                    } else {
+                        bookImage = $("<img class='card-img-top'>").attr("src", "assets/images/no_image.png");
+                    }
                     var imageHolder = $("<div class='image-holder'>");
                     imageHolder.append(bookImage);
                     console.log(results[i].galleryURL);
@@ -149,7 +155,7 @@ $(document).ready(function() {
                     $("#books").append(card);
                 }
             } else {
-                var ebayError = $("<p>").html("No results found. Try searching on <a href='https://www.ebay.com'>eBay</a> instead.");
+                var ebayError = $("<p>").html("No results found. Try searching on <a href='https://www.ebay.com' target='_blank'>eBay</a> instead.");
                 var errorCard = $("<div class='card error-card'>").append(ebayError);
                 $("#books").append(errorCard);
             }

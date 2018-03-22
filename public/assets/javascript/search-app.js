@@ -28,11 +28,6 @@ $(document).ready(function() {
                 var cardBody = $("<div class='card-body search-card-body'>").append(cardTitle, bookLink, remove);
                 var card = $("<div class='card search-card'>").append(cardBody);
                 $("#priorSearches").append(card);
-            
-
-            // create button to remove train from table and database
-            //var remove = $("<td class='text-center'><button type='submit' class='remove btn btn-primary btn-sm'><i class='fa fa-trash'></i> Remove</button></td>");
-
                 });
 
             // Handle the errors
@@ -44,7 +39,12 @@ $(document).ready(function() {
     firebase.auth().onAuthStateChanged(function(user) {
         window.user = user; // user is undefined if no user signed in
         console.log(user);
-        if (user) {
+
+        if (user === null && window.location.pathname !== "/"){
+            window.location.assign("index.html");
+        }
+
+        if (user !== null) {
             $("#signIn").hide();
             $("#signOut").show();
             $("#userName").text(user.displayName + " (My Account)");
@@ -80,11 +80,10 @@ $(document).ready(function() {
 
     function googleSignout() {
         firebase.auth().signOut()
-
             .then(function() {
-                console.log('Signout Successful')
+                console.log('Signout Successful');
             }, function(error) {
-                console.log('Signout Failed')
+                console.log('Signout Failed');
             });
     }
 
