@@ -1,0 +1,41 @@
+[debug] [2018-03-21T01:41:25.198Z] ----------------------------------------------------------------------
+[debug] [2018-03-21T01:41:25.200Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Keys\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-21T01:41:25.200Z] CLI Version:   3.17.5
+[debug] [2018-03-21T01:41:25.200Z] Platform:      win32
+[debug] [2018-03-21T01:41:25.200Z] Node Version:  v8.9.3
+[debug] [2018-03-21T01:41:25.201Z] Time:          Tue Mar 20 2018 20:41:25 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T01:41:25.201Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-21T01:41:25.213Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-21T01:41:25.214Z] > authorizing via signed-in user
+[debug] [2018-03-21T01:41:25.215Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-21T01:41:25.216Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/osswIlDUoP35kKTiGmdoh4QoIzhBANuSyK0yuqhhvZM',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Mar 20 2018 20:41:25 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T01:41:25.467Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T01:41:25.482Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 20:41:25 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T01:41:25.902Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T01:41:25.903Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Tue Mar 20 2018 20:41:25 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T01:41:26.308Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T01:41:26.309Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Tue Mar 20 2018 20:41:26 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T01:41:26.643Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Keys\Desktop\project1\smarket'...
+[info] 
+[debug] [2018-03-21T01:41:26.650Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Tue Mar 20 2018 20:41:26 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-21T01:41:27.107Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
