@@ -1,4 +1,5 @@
 /* BASE STYLES */
+
 html {
     max-height: 100%;
     max-width: 100%;
@@ -16,12 +17,21 @@ body {
     animation-fill-mode: backwards;
 }
 
-ul {
+/* NAV BAR */
+
+.navbar-toggler {
+    border-radius: 25px!important;
+    border: 2px solid #474E5D!important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+}
+
+#account-info ul {
     list-style-type: none;
     display: inline;
 }
 
-li {
+#account-info li {
     display: inline-block;
     margin: 10px;
 }
@@ -29,6 +39,7 @@ li {
 .capitalize {
     text-transform: capitalize;
 }
+
 
 /* WRAPPER */
 
@@ -39,12 +50,14 @@ li {
     position: relative;
 }
 
+
 /* ACCOUNT INFORMATION */
 
 .account-info-row {
     background-color: #F8F7FF;
     border-bottom: 10px solid #474E5D;
 }
+
 
 /* HEADER */
 
@@ -53,9 +66,10 @@ li {
 }
 
 img.banner {
-    max-width: 800px;
+    max-width: 400px;
     width: 100%;
 }
+
 
 /* MAIN */
 
@@ -63,6 +77,7 @@ main {
     margin-bottom: auto;
     position: relative;
 }
+
 
 
 /* MIDDLE */
@@ -75,12 +90,36 @@ main {
     margin: 0 auto;
 }
 
+
+/* SEARCH FORM */
+
+.btn-custom {
+    background-color: #F8F7FF;
+    color: #1883A5;
+    margin-top: 0;
+}
+
+.btn-custom:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+#book-input {
+    border-radius: 5px!important;
+    padding: 5px!important;
+}
+
+.fa-home {
+    font-size: 36px!important;
+}
+
 /* BACKGROUNDS */
 
 .bg-1 {
     background-color: #1883A5;
     color: #ffffff;
 }
+
 
 /* CARD STYLES */
 
@@ -126,6 +165,7 @@ main {
     max-height: none;
 }
 
+
 /* TABS */
 
 ul#tabs {
@@ -145,7 +185,7 @@ ul#tabs li {
     text-align: center;
     margin: 0 5%;
     cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
 }
 
@@ -157,9 +197,9 @@ ul#tabs li h3 {
 }
 
 ul#tabs li:hover h3 {
-   color: black; 
+    color: black;
 }
-    
+
 ul#tabs li.active h3 {
     color: black;
     cursor: auto;
@@ -183,6 +223,7 @@ ul#tab li.active {
     display: block;
 }
 
+
 /* RESULTS AREA */
 
 .results-area {
@@ -193,16 +234,19 @@ ul#tab li.active {
 .error-card {
     width: 100%;
     padding: 20px;
-    height: 25vw;
+    height: auto;
     min-height: 150px;
     margin: 10px auto;
+    text-align: center;
 }
+
 
 /* GOOGLE RESULTS */
 
 .descriptor {
     font-weight: bold;
     cursor: pointer;
+    display: table;
 }
 
 .google-desc {
@@ -214,6 +258,7 @@ ul#tab li.active {
     margin-bottom: 10px;
     min-width: 90%;
 }
+
 
 /* EBAY RESULTS */
 
@@ -237,6 +282,7 @@ ul#tab li.active {
 .ebay-card .card-title {
     font-size: 1rem!important;
 }
+
 
 
 /* PRIOR SEARCHES */
@@ -267,6 +313,7 @@ ul#tab li.active {
 }
 
 
+
 /* FOOTER */
 
 footer {
@@ -291,7 +338,9 @@ footer p {
     font-size: 2rem;
 }
 
+
 /* ANIMATIONS */
+
 
 /* FADE IN */
 
@@ -310,20 +359,109 @@ footer p {
     }
 }
 
+
 /* Tablet portrait */
 
 @media screen and (max-width: 798px) {
+    h3 {
+        font-size: 1.5rem!important;
+    }
+    h5 {
+        font-size: 1.1rem!important;
+    }
+    p {
+        font-size: .9rem!important;
+    }
+    #account-info, #signIn, #signOut {
+        font-size: .7rem
+        letter-spacing: 2.5pt;
+    }
+    #signIn, #signOut {
+
+    }
     .ebay-card {
         max-width: none;
         margin: 10px auto;
     }
+    .ebay-card .card-title {
+        font-size: .9rem!important;
+    }
+    footer p {
+        font-size: 1.7rem!important;
+    }
     .table-display {
         display: table;
     }
-    
     ul#tab li {
-    display: none;
+        display: none;
     }
 }
 
+@media screen and (max-width: 767px) {
+    #account-info ul {
+        padding-left: 0!important;
+        text-align: center;
+    }
+    #account-info li {
+        display: block;
+    } 
+}
 
+@media screen and (max-width: 510px) {
+    h3 {
+        font-size: 1.3rem!important;
+    }
+    h5 {
+        font-size: 1rem!important;
+    }
+    p {
+        font-size: .9rem!important;
+    }
+    .ebay-card .card-title {
+        font-size: .7rem!important;
+    }
+    footer p {
+        font-size: 1.5rem!important;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    h3 {
+        font-size: 1.1rem!important;
+    }
+    h5 {
+        font-size: .9rem!important;
+    }
+    p {
+        font-size: .8rem!important;
+    }
+    .ebay-card .card-title {
+        font-size: .6rem!important;
+    }
+    .btn-custom {
+        text-align: center;
+        margin: 10px auto!important;
+        display: block!important;
+    }
+    footer p {
+        font-size: 1.3rem!important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h3 {
+        font-size: .9rem!important;
+    }
+    h5 {
+        font-size: .8rem!important;
+    }
+    p {
+        font-size: .7rem!important;
+    }
+    .ebay-card .card-title {
+        font-size: .5rem!important;
+    }
+    footer p {
+        font-size: 1rem!important;
+    }
+}
