@@ -93,7 +93,9 @@ $(document).ready(function() {
 
                 var data = response.items[0].volumeInfo;
                 console.log(data);
-                var googleImage = $("<img class='card-img-top'>").attr("src", data.imageLinks.thumbnail);
+                var googleImageUrl = data.imageLinks.thumbnail;
+                    googleImageUrl = googleImageUrl.replace("http://", "https://");
+                var googleImage = $("<img class='card-img-top'>").attr("src", googleImageUrl);
                 var googleHolder = $("<div class='image-holder'>");
                 googleHolder.append(googleImage);
                 var googleTitle = $("<h3 class='card-title'>").text(data.title);
@@ -101,7 +103,9 @@ $(document).ready(function() {
                 var googleDate = $("<p>").text("Published: " + data.publishedDate);
                 var googleISBN = $("<p>").text("ISBN: " + data.industryIdentifiers[0].identifier);
                 var googleCat = $("<p>").text(data.categories);
-                var googleLink = $("<a target='_blank' class='btn btn-primary'>").attr("href", data.infoLink).text("Go To Google");
+                var googleUrl = data.infoLink;
+                    googleUrl = googleUrl.replace("http://", "https://");
+                var googleLink = $("<a target='_blank' class='btn btn-primary'>").attr("href", googleUrl).text("Go To Google");
                 var descriptor = $("<p class='descriptor' data-text-swap='Description -' data-text-original='Description +'>").text("Description +");
                 var googleDesc = $("<p class='google-desc'>").text(data.description);
                 var googleBody = $("<div class='card-body google-body'>").append(googleTitle, googleAuthors, googleDate, googleISBN, googleCat, descriptor, googleDesc, googleLink);
@@ -145,8 +149,10 @@ $(document).ready(function() {
                     }
                     var imageHolder = $("<div class='image-holder'>");
                     imageHolder.append(bookImage);
-                    console.log(results[i].galleryURL);
-                    var bookLink = $("<a target='_blank' class='btn btn-primary'>").attr("href", results[i].viewItemURL).text("Buy It!");
+                    var linkUrl = results[i].viewItemURL[0];
+
+                        linkUrl = linkUrl.replace("http://", "https://");
+                    var bookLink = $("<a target='_blank' class='btn btn-primary'>").attr("href", linkUrl).text("Buy It!");
                     console.log(cardTitle.text());
                     console.log(results[i].viewItemURL);
                     var currency = results[i].sellingStatus[0].currentPrice[0]["__value__"]
