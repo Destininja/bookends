@@ -108,7 +108,7 @@ $(document).ready(function() {
                 var googleCard = $("<div class='card google-card'>").append(googleHolder, googleBody);
                 $("#googleDisplay").append(googleCard);
             } else {
-                var googleError = $("<p>").text("No Google results found. Please try searching again.");
+                var googleError = $("<p>").html("You searched for '" + book + "'.<br>No Google results found. Please try searching again.");
                 var errorCard = $("<div class='card error-card'>").append(googleError);
                 $("#googleDisplay").append(errorCard);
             }
@@ -155,7 +155,7 @@ $(document).ready(function() {
                     $("#books").append(card);
                 }
             } else {
-                var ebayError = $("<p>").html("No buying results found. Try searching on <a href='https://www.ebay.com' target='_blank'>eBay</a> instead.");
+                var ebayError = $("<p>").html("You searched for '" + book + "'.<br>No buying results found. Try searching on <a href='https://www.ebay.com' target='_blank'>eBay</a> instead.");
                 var errorCard = $("<div class='card error-card'>").append(ebayError);
                 $("#books").append(errorCard);
             }
