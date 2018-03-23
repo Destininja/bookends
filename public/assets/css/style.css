@@ -298,6 +298,8 @@ ul#tab li.active {
     justify-content: center;
     max-width: 1500px;
     margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #sortable div span { 
