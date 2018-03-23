@@ -26,7 +26,7 @@ $(document).ready(function() {
                 bookLink.attr("data-id", sv);
                 var remove = $("<button type='submit' class='remove btn btn-primary btn-sm'><i class='fa fa-trash'></i></button>").attr("data-key", key);
                 var cardBody = $("<div class='card-body search-card-body'>").append(cardTitle, bookLink, remove);
-                var card = $("<div class='card search-card ui-state-default'>").html("<span class='ui-icon ui-icon-arrowthick-2-e-w'></span>").append(cardBody);
+                var card = $("<div class='card search-card ui-state-default'>").html("<span class='ui-icon ui-icon-arrowthick-2-e-w'></span><span class='ui-icon ui-icon-arrowthick-2-n-s'></span>").append(cardBody);
                 $("#sortable").append(card);
                 });
 
@@ -98,6 +98,7 @@ $(document).ready(function() {
 $( function() {
     $( "#sortable" ).sortable({
         containment: '.wrapper',
+        tolerance: "pointer",
         helper: 'clone',
         opacity: 0.70,
         zIndex:10000,
