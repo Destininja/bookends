@@ -97,7 +97,7 @@ $(document).ready(function() {
 
 $( function() {
     $( "#sortable" ).sortable({
-        containment: 'document',
+        containment: '.wrapper',
         helper: 'clone',
         opacity: 0.70,
         zIndex:10000,
