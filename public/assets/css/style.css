@@ -18,6 +18,10 @@ body {
 }
 
 /* NAV BAR */
+.navbar {
+    padding: 0!important;
+}
+
 
 .navbar-toggler {
     border-radius: 25px!important;
@@ -287,13 +291,20 @@ ul#tab li.active {
 
 /* PRIOR SEARCHES */
 
-#priorSearches {
+#sortable {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1500px;
     margin: 0 auto;
+}
+
+#sortable div span { 
+    position: absolute; 
+    left: 10px;
+    top: 10px; 
+    cursor: pointer;
 }
 
 .search-card {
@@ -310,6 +321,10 @@ ul#tab li.active {
 .remove {
     display: block;
     margin: 5px auto;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button{
+    color: white!important;
 }
 
 
@@ -405,6 +420,9 @@ footer p {
     #account-info li {
         display: block;
     } 
+    .navbar {
+        padding: .5rem 1rem!important;
+    }
 }
 
 @media screen and (max-width: 510px) {
