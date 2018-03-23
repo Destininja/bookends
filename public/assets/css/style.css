@@ -17,29 +17,6 @@ body {
     animation-fill-mode: backwards;
 }
 
-/* NAV BAR */
-.navbar {
-    padding: 0!important;
-    margin-top: 10px;
-}
-
-.navbar-toggler {
-    border-radius: 25px!important;
-    border: 2px solid #474E5D!important;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-touch-callout: none;
-}
-
-#account-info ul {
-    list-style-type: none;
-    display: inline;
-}
-
-#account-info li {
-    display: inline-block;
-    margin: 10px;
-}
-
 .capitalize {
     text-transform: capitalize;
 }
@@ -55,12 +32,35 @@ body {
 }
 
 
-/* ACCOUNT INFORMATION */
+/* NAV BAR */
+
+.navbar {
+    padding: 0!important;
+    margin-top: 10px;
+}
+
+.navbar-toggler {
+    border-radius: 25px!important;
+    border: 2px solid #474E5D!important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+}
 
 .account-info-row {
     background-color: #F8F7FF;
     border-bottom: 10px solid #474E5D;
 }
+
+#account-info ul {
+    list-style-type: none;
+    display: inline;
+}
+
+#account-info li {
+    display: inline-block;
+    margin: 10px;
+}
+
 
 
 /* HEADER */
@@ -95,12 +95,16 @@ img.banner {
 }
 
 
+
+
 /* MAIN */
 
 main {
     margin-bottom: auto;
     position: relative;
 }
+
+
 
 
 
@@ -113,6 +117,8 @@ main {
     height: 100%;
     margin: 0 auto;
 }
+
+
 
 
 /* SEARCH FORM */
@@ -137,12 +143,24 @@ main {
     font-size: 28px!important;
 }
 
+
+
 /* BACKGROUNDS */
 
 .bg-1 {
     background-color: #1883A5;
     color: #ffffff;
 }
+
+
+
+/* RESULTS AREA */
+
+.results-area {
+    width: 90%;
+    height: auto;
+}
+
 
 
 /* CARD STYLES */
@@ -171,40 +189,6 @@ main {
     margin: 0 auto;
 }
 
-.google-card .image-holder {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    max-width: 350px;
-    max-height: 350px;
-    margin: 10px auto 0 auto;
-}
-
-.google-card .card-img-top {
-    width: auto;
-    height: auto;
-    max-width: none;
-    max-height: none;
-}
-
-
-/* RESULTS AREA */
-
-.results-area {
-    width: 90%;
-    height: auto;
-}
-
-.error-card {
-    width: 100%;
-    padding: 20px;
-    height: auto;
-    min-height: 150px;
-    margin: 10px auto;
-    text-align: center;
-}
 
 
 /* GOOGLE RESULTS */
@@ -224,6 +208,26 @@ main {
     margin-bottom: 10px;
     min-width: 90%;
 }
+
+.google-card .image-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 350px;
+    max-height: 350px;
+    margin: 10px auto 0 auto;
+}
+
+.google-card .card-img-top {
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+}
+
+
 
 
 /* EBAY RESULTS */
@@ -251,6 +255,21 @@ main {
 
 
 
+
+/* ERROR CARDS */
+
+.error-card {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    min-height: 150px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+
+
 /* PRIOR SEARCHES */
 
 #sortable {
@@ -264,18 +283,18 @@ main {
     padding-bottom: 20px;
 }
 
-.ui-icon-arrowthick-2-e-w { 
-    position: absolute; 
+.ui-icon-arrowthick-2-e-w {
+    position: absolute;
     left: 10px;
-    top: 10px; 
+    top: 10px;
     cursor: pointer;
     display: inline;
 }
 
 .ui-icon-arrowthick-2-n-s {
-    position: absolute; 
+    position: absolute;
     left: 10px;
-    top: 10px; 
+    top: 10px;
     cursor: pointer;
     display: none;
 }
@@ -301,9 +320,17 @@ main {
     margin: 5px auto;
 }
 
-.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button{
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited,
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+.ui-button {
     color: white!important;
 }
+
+
 
 
 
@@ -332,6 +359,8 @@ footer p {
 }
 
 
+
+
 /* ANIMATIONS */
 
 
@@ -346,14 +375,16 @@ footer p {
     }
 }
 
+
+
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 991px) {
     #books {
         margin-left: 0;
     }
 }
 
-
-/* Tablet portrait */
 
 @media screen and (max-width: 798px) {
     h3 {
@@ -365,7 +396,9 @@ footer p {
     p {
         font-size: .9rem!important;
     }
-    #account-info, #signIn, #signOut {
+    #account-info,
+    #signIn,
+    #signOut {
         font-size: .7rem;
     }
     .ebay-card {
@@ -390,7 +423,7 @@ footer p {
     }
     #account-info li {
         display: block;
-    } 
+    }
     .navbar {
         padding: .5rem 1rem!important;
         margin-top: 0;
@@ -398,12 +431,12 @@ footer p {
 }
 
 @media screen and (max-width: 566px) {
-    .ui-icon-arrowthick-2-e-w { 
+    .ui-icon-arrowthick-2-e-w {
         display: none;
-}
+    }
     .ui-icon-arrowthick-2-n-s {
-        display: inline;   
-}
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 510px) {
