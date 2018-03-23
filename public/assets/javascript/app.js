@@ -183,8 +183,16 @@ $(document).ready(function() {
         el.text() === el.data("text-swap") ?
             el.text(el.data("text-original")) :
             el.text(el.data("text-swap"));
+    });
 
+    $("#about-click").on("click", function() {
 
+        //Expand or collapse this panel
+        $("#about").slideToggle("slow");
+        var el = $(this);
+        el.text() === el.data("text-swap") ?
+            el.text(el.data("text-original")) :
+            el.text(el.data("text-swap"));
     });
 
 });
