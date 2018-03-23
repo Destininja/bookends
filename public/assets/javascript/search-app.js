@@ -96,7 +96,13 @@ $(document).ready(function() {
     });
 
 $( function() {
-    $( "#sortable" ).sortable();
+    $( "#sortable" ).sortable({
+        containment: 'document',
+        helper: 'clone',
+        opacity: 0.70,
+        zIndex:10000,
+        appendTo: "body"
+    });
     $( "#sortable" ).disableSelection();
     } );
 
