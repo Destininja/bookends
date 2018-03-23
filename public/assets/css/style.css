@@ -365,7 +365,7 @@ footer p {
         font-size: .9rem!important;
     }
     #account-info, #signIn, #signOut {
-        font-size: .7rem
+        font-size: .7rem;
         letter-spacing: 2.5pt;
     }
     .ebay-card {
