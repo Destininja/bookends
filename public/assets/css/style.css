@@ -20,6 +20,7 @@ body {
 /* NAV BAR */
 .navbar {
     padding: 0!important;
+    margin-top: 10px;
 }
 
 .navbar-toggler {
@@ -133,7 +134,7 @@ main {
 }
 
 .fa-home {
-    font-size: 36px!important;
+    font-size: 28px!important;
 }
 
 /* BACKGROUNDS */
@@ -366,7 +367,6 @@ footer p {
     }
     #account-info, #signIn, #signOut {
         font-size: .7rem;
-        letter-spacing: 2.5pt;
     }
     .ebay-card {
         max-width: none;
@@ -393,6 +393,7 @@ footer p {
     } 
     .navbar {
         padding: .5rem 1rem!important;
+        margin-top: 0;
     }
 }
 
