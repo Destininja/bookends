@@ -105,7 +105,7 @@ $( function() {
         appendTo: "body"
     });
     $( "#sortable" ).disableSelection();
-    } );
+    });
 
 $(document).on("click", ".bookSearch", function() {
     searchTerm = $(this).attr("data-id");
@@ -120,7 +120,6 @@ $(document).on("click", ".remove", function(e) {
         e.preventDefault();
         var key = $(this).attr("data-key");
         $(this).closest(".search-card").remove();
-        // var id = $(this).closest("tr").data("id");
         database.ref().child('users/').child(uid).child('books/').child(key).remove();
     });
 
