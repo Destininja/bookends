@@ -356,3 +356,35 @@
 [info] +  hosting: Local server: http://localhost:5000
 
 [info] Shutting down...
+[debug] [2018-03-23T03:06:30.825Z] ----------------------------------------------------------------------
+[debug] [2018-03-23T03:06:30.829Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prodr\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-23T03:06:30.829Z] CLI Version:   3.17.6
+[debug] [2018-03-23T03:06:30.829Z] Platform:      win32
+[debug] [2018-03-23T03:06:30.829Z] Node Version:  v8.9.4
+[debug] [2018-03-23T03:06:30.829Z] Time:          Thu Mar 22 2018 22:06:30 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-23T03:06:30.829Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-23T03:06:30.841Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-23T03:06:30.841Z] > authorizing via signed-in user
+[debug] [2018-03-23T03:06:30.845Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookends-janptp1g4  
+  
+ Thu Mar 22 2018 22:06:30 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-23T03:06:31.281Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-23T03:06:31.284Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookends-janptp1g4/tokens  
+  
+ Thu Mar 22 2018 22:06:31 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-23T03:06:31.842Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-23T03:06:31.842Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookends-janptp1g4  
+  
+ Thu Mar 22 2018 22:06:31 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-23T03:06:32.170Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prodr\Desktop\xandromus.github.io\bookends'...
+[info] 
+[debug] [2018-03-23T03:06:32.170Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/927262703566/clients/_:getWebAppConfig  
+  
+ Thu Mar 22 2018 22:06:32 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-23T03:06:32.655Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
