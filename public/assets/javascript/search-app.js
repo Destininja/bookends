@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     database.ref().child('users/').child(uid).child('books/')
         .on("value", function(userSnapshot) {
-            $("#priorSearches").empty();
+            $("#sortable").empty();
             userSnapshot.forEach(function (snapshot) {
 
             // store the snapshot.val() in a variable for convenience
@@ -26,8 +26,8 @@ $(document).ready(function() {
                 bookLink.attr("data-id", sv);
                 var remove = $("<button type='submit' class='remove btn btn-primary btn-sm'><i class='fa fa-trash'></i></button>").attr("data-key", key);
                 var cardBody = $("<div class='card-body search-card-body'>").append(cardTitle, bookLink, remove);
-                var card = $("<div class='card search-card'>").append(cardBody);
-                $("#priorSearches").append(card);
+                var card = $("<div class='card search-card ui-state-default'>").html("<span class='ui-icon ui-icon-arrowthick-2-e-w'></span>").append(cardBody);
+                $("#sortable").append(card);
                 });
 
             // Handle the errors
@@ -54,7 +54,7 @@ $(document).ready(function() {
             $("#signIn").show();
             $("#signOut").hide();
             $("#userName, #userEmail").empty();
-            $("#priorSearches").empty();
+            $("#sortable").empty();
         }
     });
 
@@ -94,6 +94,11 @@ $(document).ready(function() {
     $("#signOut").on("click", function() {
         googleSignout();
     });
+
+$( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+    } );
 
 $(document).on("click", ".bookSearch", function() {
     searchTerm = $(this).attr("data-id");
