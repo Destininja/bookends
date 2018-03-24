@@ -107,14 +107,24 @@
                 method: "GET",
                 dataType: "jsonp"
             }).then(function(response) {
+                console.log(response);
 
                 // if we get a response, assign variables and create Google results card. Append it to the Google display
                 if (response.items) {
 
                     var data = response.items[0].volumeInfo;
-                    var googleImageUrl = data.imageLinks.thumbnail;
-                    googleImageUrl = googleImageUrl.replace("http://", "https://");
-                    var googleImage = $("<img class='card-img-top'>").attr("src", googleImageUrl);
+                    var googleImage;
+
+                    // if Google result has an image, use it
+                    if (data.imageLinks) {
+                        var googleImageUrl = data.imageLinks.thumbnail;
+                        googleImageUrl = googleImageUrl.replace("http://", "https://");
+                        googleImage = $("<img class='card-img-top'>").attr("src", googleImageUrl);
+                    } else {
+
+                        // otherwise, use 'no image available'
+                        googleImage = $("<img class='card-img-top'>").attr("src", "assets/images/no_image.png");
+                    }
                     var googleHolder = $("<div class='image-holder'>");
                     googleHolder.append(googleImage);
                     var googleTitle = $("<h3 class='card-title'>").text(data.title);
